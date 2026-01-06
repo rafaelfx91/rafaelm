@@ -339,23 +339,29 @@ nav {
 
 
 /* Timeline Styles */
-/* Timeline Styles (Cards) */
+/* Timeline Styles (Grid Layout) */
 .timeline {
-    margin-top: 2rem;
-    border-left: 2px solid rgba(5, 5, 5, 0.1);
-    /* Subtle line or hidden */
+    margin-top: 3rem;
     padding-left: 0;
+    border-left: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
 }
 
 .timeline li {
     background: var(--surface-color);
-    padding: 1.5rem;
-    border-radius: 12px;
+    padding: 2rem;
+    border-radius: 16px;
     border: 1px solid var(--border-color);
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    /* Let grid handle gap */
     position: relative;
     transition: transform 0.3s ease, border-color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .timeline li:hover {

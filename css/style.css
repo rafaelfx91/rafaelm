@@ -339,52 +339,99 @@ nav {
 
 
 /* Timeline Styles */
+/* Timeline Styles (Cards) */
 .timeline {
     margin-top: 2rem;
-    border-left: 2px solid var(--accent-color);
-    padding-left: 20px;
+    border-left: 2px solid rgba(5, 5, 5, 0.1);
+    /* Subtle line or hidden */
+    padding-left: 0;
 }
 
 .timeline li {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
     margin-bottom: 2rem;
     position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+.timeline li:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+/* Connector Line (Left side visual) */
 .timeline li::before {
     content: '';
     position: absolute;
-    left: -26px;
-    top: 5px;
-    width: 10px;
-    height: 10px;
-    background: var(--accent-color);
-    border-radius: 50%;
-    border: 2px solid var(--bg-color);
+    left: -12px;
+    /* Outside card */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    /* Optional: arrow connection or keep simple */
+    display: none;
 }
 
 .timeline .date {
-    display: block;
-    font-size: 0.85rem;
+    display: inline-block;
+    background: rgba(0, 112, 243, 0.1);
     color: var(--accent-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 15px;
 }
 
 .timeline strong {
     display: block;
-    font-size: 1.1rem;
-    color: var(--text-primary);
+    font-size: 1.25rem;
+    color: white;
     margin-bottom: 5px;
 }
 
-.timeline p {
-    font-size: 0.95rem !important;
-    margin-bottom: 0 !important;
+.timeline p.company {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 5px;
 }
 
-.timeline p span {
-    color: white;
-    font-weight: 500;
+.timeline p.company span {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.timeline p.desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Timeline Tags */
+.timeline-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.t-tag {
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #888;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.timeline a {
+    /* If needed later */
 }
 
 /* Security Badge */

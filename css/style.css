@@ -487,8 +487,8 @@ footer {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background: #25D366;
     color: white;
     border-radius: 50%;
@@ -506,14 +506,16 @@ footer {
     background: #1faf56;
 }
 
-/* Special Layout for Connections (Center the last item) */
-#conexoes .grid-3 {
+/* Special Layout for Connections and Sites (Center the last item) */
+#conexoes .grid-3,
+#sites .grid-3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#conexoes .project-card {
+#conexoes .project-card,
+#sites .project-card {
     flex: 1 1 300px;
     max-width: 380px;
     /* Prevents the single item from stretching too much */
@@ -529,9 +531,44 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    /* Mobile Menu Logic */
+    .mobile-menu-icon {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
+        z-index: 1001;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
     .nav-links {
-        display: none;
-        /* Add mobile menu logic later if needed */
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 70%;
+        height: calc(100vh - var(--header-height));
+        background: rgba(5, 5, 5, 0.98);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease;
+        border-left: 1px solid var(--border-color);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        display: block;
+        /* Ensure visibility */
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
     }
 
     /* Ensure full width on mobile */

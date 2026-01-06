@@ -26,14 +26,20 @@
         <div class="container">
             <nav>
                 <div class="logo">Dev<span>Ti</span></div>
-                <div class="nav-links">
+                <div class="nav-links" id="nav-links">
                     <a href="#home">Início</a>
                     <a href="#solucoes">Soluções</a>
                     <a href="#projetos">Projetos</a>
                     <a href="#sobre">Sobre / Timeline</a>
                     <a href="#conexoes">Certificações</a>
                 </div>
-                <a href="https://wa.me/5519989244512" class="btn btn-outline small-btn">Fale Conosco</a>
+                <div class="nav-right" style="display: flex; align-items: center; gap: 15px;">
+                    <a href="https://wa.me/5519989244512" class="btn btn-outline small-btn desktop-only">Fale
+                        Conosco</a>
+                    <div class="mobile-menu-icon" id="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -148,6 +154,87 @@
         </div>
     </section>
 
+    </div>
+    </div>
+    </section>
+
+    <!-- Projetos Web / Digitais -->
+    <section id="sites" class="portfolio" style="background: var(--bg-color); padding-top: 0;">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">Presença Digital & Web</h2>
+            <div class="grid-3">
+                <!-- Site 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/img/projeto1/site1.png" alt="Vicentini Decor">
+                    </div>
+                    <div class="project-content">
+                        <h3>Vicentini Decor</h3>
+                        <p class="project-desc">E-commerce e portal institucional focado em decoração de interiores.</p>
+                        <div class="project-tech">
+                            <span class="tag">Web</span>
+                            <span class="tag">CMS</span>
+                        </div>
+                        <a href="https://vicentinidecor.com.br/" target="_blank" class="btn-link">Visitar Site <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Site 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/img/projeto1/site2.png" alt="Artesanato Leopoldino">
+                    </div>
+                    <div class="project-content">
+                        <h3>Artesanato Leopoldino</h3>
+                        <p class="project-desc">Loja virtual de artesanatos com integração de pagamentos e vitrine.</p>
+                        <div class="project-tech">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <a href="https://artesanatoleopoldino.com.br/" target="_blank" class="btn-link">Visitar Site <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Site 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/img/projeto1/site3.png" alt="Elza Decorações">
+                    </div>
+                    <div class="project-content">
+                        <h3>Elza Decorações</h3>
+                        <p class="project-desc">Site institucional para portfólio de decorações de eventos e festas.</p>
+                        <div class="project-tech">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <a href="https://elzadecoracoes.com.br/" target="_blank" class="btn-link">Visitar Site <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Site 4 - Lider -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/img/projeto1/site4.png" alt="Lider Artesanato">
+                    </div>
+                    <div class="project-content">
+                        <h3>Lider Artesanato</h3>
+                        <p class="project-desc">Catálogo digital de produtos artesanais de alta qualidade.</p>
+                        <div class="project-tech">
+                            <span class="tag">Catálogo</span>
+                            <span class="tag">Web</span>
+                        </div>
+                        <a href="https://liderartesanato.com.br/" target="_blank" class="btn-link">Visitar Site <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Sobre / Skills -->
     <section id="sobre" class="about">
         <div class="container">
@@ -216,7 +303,7 @@
     </section>
 
     <!-- Conexões & Certificações -->
-    <section id="conexoes" class="portfolio" style="background-color: var(--surface-color);">
+    <section id="conexoes" class="portfolio">
         <div class="container">
             <h2>Conexões e Certificações</h2>
             <div class="grid-3">
@@ -317,7 +404,7 @@
 
     <!-- WhatsApp Float -->
     <a href="https://wa.me/5519989244512" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
+        <img src="assets/img/logos/wa.png" alt="WhatsApp" style="width: 35px; height: 35px;">
     </a>
 
     <!-- Scripts -->

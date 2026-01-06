@@ -337,15 +337,99 @@ nav {
     font-size: 0.9rem;
 }
 
-/* Skills Grid (Logos) */
+
+/* Timeline Styles */
+.timeline {
+    margin-top: 2rem;
+    border-left: 2px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+.timeline li {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    border: 2px solid var(--bg-color);
+}
+
+.timeline .date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.timeline strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.timeline p {
+    font-size: 0.95rem !important;
+    margin-bottom: 0 !important;
+}
+
+.timeline p span {
+    color: white;
+    font-weight: 500;
+}
+
+/* Security Badge */
+.skills-right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.security-badge {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: #ff4d4d;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.security-badge:hover {
+    background: rgba(255, 0, 0, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.security-badge i {
+    font-size: 1.5rem;
+}
+
+/* Skills Grid (Logos) Re-adjustment */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
-    opacity: 0.7;
+    gap: 2rem;
+    /* Reduced gap slightly */
+    opacity: 0.8;
+    /* Increased opacity */
 }
 
+/* Skills Grid (Logos) */
 .skill-logo {
     display: flex;
     flex-direction: column;

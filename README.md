@@ -1,17 +1,17 @@
-# DevTi | Portfolio & Consultoria
+# Rafael Marcon | Portfólio Profissional
 
-> **Inteligência em Dados & Tecnologia.**
+> **Inteligência em Dados & Engenharia de Software.**
 >
-> Portfólio Profissional de **Rafael Marcon**, Engenheiro de Software Sênior e Consultor DBM.
+> Portfólio Profissional de **Rafael Huttembergue Marcon**, Analista DBM e Desenvolvedor FullStack.
 
 ![DevTi Cover](assets/img/logos/cover_placeholder.png)
 *(Se quiser, adicione uma captura de tela do site aqui futuramente)*
 
 ## 🚀 Sobre o Projeto
 
-Este projeto é uma plataforma "One Page" de alta performance desenvolvida para apresentar serviços de **Consultoria Técnica** (Salesforce, SAS, Banco de Dados) e **Engenharia de Software**.
+Este projeto é uma plataforma "One Page" de alta performance desenvolvida para apresentar minha trajetória, projetos de **Desenvolvimento de Software** e expertise em **Engenharia de Dados & DBM** (Salesforce, SAS, Oracle, SQL).
 
-Diferente de portfólios comuns, o foco aqui é vender **Expertise e Solução**, não apenas código. O design utiliza um tema **Dark Premium** para transmitir sobriedade e modernidade.
+Diferente de portfólios comuns, o foco aqui é apresentar de forma clara e visual minhas **Habilidades e Conquistas Profissionais**. O design utiliza um tema **Dark Premium** para transmitir sobriedade e modernidade.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -32,7 +32,7 @@ O projeto foi construído propositalmente com **Vanilla Web Technologies** para 
     *   **Soluções**: Consultoria Enterprise (Salesforce, Oracle, SAS).
     *   **Engenharia**: Projetos de código complexo (C++, IoT, APIs).
     *   **Web**: Portais e E-commerces entregues.
-    *   **Timeline**: Trajetória profissional em grandes empresas (Claro, Zanthus).
+    *   **Timeline**: Minha trajetória profissional detalhada com conquistas interativas.
 *   **Conexões**: Integração visual com LinkedIn, GitHub, Microsoft Learn e Salesforce Trailblazer.
 *   **CTA Flutuante**: Botão de WhatsApp fixo para conversão imediata.
 
@@ -55,8 +55,8 @@ Basta abrir o arquivo `index.html` em qualquer navegador moderno. Não requer in
 
 ## 📄 Licença
 
-Todos os direitos reservados a **Rafael Marcon / DevTi**.
-Desenvolvido com foco em performance e conversão B2B.
+Todos os direitos reservados a **Rafael Huttembergue Marcon**.
+Desenvolvido com foco em performance e carregamento instantâneo.
 
 ---
 

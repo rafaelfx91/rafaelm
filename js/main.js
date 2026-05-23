@@ -44,3 +44,38 @@ if (mobileBtn) {
         });
     });
 }
+
+// Modal Functionality for Timeline Details
+function openModal(id) {
+    const modal = document.getElementById(`modal-${id}`);
+    if (modal) {
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Disable page scrolling
+    }
+}
+
+function closeModal(id) {
+    const modal = document.getElementById(`modal-${id}`);
+    if (modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; // Restore page scrolling
+    }
+}
+
+// Close modal when clicking outside of the content box
+window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) {
+        e.target.classList.remove('show');
+        document.body.style.overflow = '';
+    }
+});
+
+// Close modal on ESC key press
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.modal.show').forEach(modal => {
+            modal.classList.remove('show');
+        });
+        document.body.style.overflow = '';
+    }
+});
